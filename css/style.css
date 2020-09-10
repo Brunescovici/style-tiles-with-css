@@ -1,8 +1,8 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+@import url("https://fonts.googleapis.com/css?family=Domine:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,400italic,700italic");
 
 * {
   box-sizing: border-box;
@@ -20,8 +20,8 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-4: hotpink;
   --color-5: rebeccapurple;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Domine", sans-serif;
+  --secondary-font: "Montserrat", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -65,7 +65,7 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: #F5C414;
   color: white;
   width: 100%;
 }
@@ -126,23 +126,19 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: #FEEE00;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #F5C414;
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #03B54D;
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
-}
-
-.color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: #227619;
 }
 
 .textures li {
