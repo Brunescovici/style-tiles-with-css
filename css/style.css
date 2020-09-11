@@ -14,11 +14,11 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #2B9963;
+  --link-color: #ADF9FF;
+  --link-hover-color: #25BFCC;
+  --color-4: #A6585F;
+  --color-5: #CC2587;
 
   --primary-font: "Domine", sans-serif;
   --secondary-font: "Montserrat", serif;
@@ -35,7 +35,7 @@ a {
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.1);
 }
 
 button:active {
@@ -65,7 +65,7 @@ footer {
 }
 
 .full-width {
-  background: #F5C414;
+  background: var(--bg-color);
   color: white;
   width: 100%;
 }
@@ -126,19 +126,23 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: #FEEE00;
+  background-color: var(--bg-color);
 }
 
 .color-swatch-2 {
-  background-color: #F5C414;
+  background-color: var(--link-color);
 }
 
 .color-swatch-3 {
-  background-color: #03B54D;
+  background-color: var(--link-hover-color);
 }
 
 .color-swatch-4 {
-  background-color: #227619;
+  background-color: var(--color-4);
+}
+
+.color-swatch-5 {
+  background-color: var(--color-5);
 }
 
 .textures li {
