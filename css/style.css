@@ -1,11 +1,10 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Domine:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,400italic,700italic");
+@import url("https://use.typekit.net/hdt8czr.css");
+
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
@@ -14,279 +13,293 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: #2B9963;
-  --link-color: #ADF9FF;
-  --link-hover-color: #25BFCC;
-  --color-4: #A6585F;
-  --color-5: #CC2587;
+    --bg-color: #0F6B57;
+	--link-color: #987E6F;
+	--link-hover-color: #9E8A8A ;
+	--color-4: #ECDFCE;
+	--color-5: #FCF9F2;
+    --color-6: #FFC726;
+    --color-7: #F7E195;
 
-  --primary-font: "Domine", sans-serif;
-  --secondary-font: "Montserrat", serif;
-  --main-text-color: #000;
+	--primary-font: verveine, sans-serif;
+	--secondary-font: montserrat, sans-serif;
+	--main-text-color: #000;
 
-  --white-space: 1rem;
+	--white-space: 1rem;
 }
 
 button {
-  transition: all 3s;
-}
-a {
-  transition: all 3s;
-}
-button:hover {
-  background-color: var(--link-hover-color);
-    color: var(--link-color);
-  transform: scale(1.1);
+	transition: all 0.2s;
 }
 
-button:active {
-  background-color: var(--bg-color);
+.outline {
+    border: 3px solid #FFC726;
+    position: relative;
+    color: black;
+    font-size: 16pt;
+    line-height: 50px;
+    top: -9px;
+    left: -14px;
+    width: 200px;
+    height: 60px;
+    transition: all 0.2s;
+}
+
+button {
+    background-color: #ECDFCE;
+    border: 0px;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+a {
+	transition: all 0.4s;
+}
+
+button:hover {
+	top: 18px;
+    left: 18px;
 }
 
 a:hover {
-  color: var(--link-hover-color);
-  font-size: 1.1rem;
+	color: var(--link-hover-color);
+	font-size: 1.1rem;
 }
+
 html {
-  font-size: 100%;
-  font-family: var(--primary-font);
+	font-size: 100%;
+	font-family: var(--primary-font);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 header,
 main,
 footer {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: calc(2 * var(--white-space));
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: calc(2 * var(--white-space));
 }
 
 .full-width {
-  background: var(--bg-color);
-  color: white;
-  width: 100%;
+	background: var(--bg-color);
+	color: white;
+	width: 100%;
 }
 
 .header-wrapper h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  padding-right: 0.75em;
-  font-weight: bold;
-  color: white;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding-right: 0.75em;
+	font-weight: bold;
+	color: white;
 }
 
 .header-wrapper h2 {
-  font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
-  margin: var(--white-space) 0;
+	font-size: 1.6em;
+	font-family: var(--secondary-font);
+	color: rgba(255, 255, 255, 0.95);
+	font-weight: 600;
+	margin: var(--white-space) 0;
 }
 
 .header-wrapper h3 {
-  font-size: 1.2rem;
-  font-style: italic;
+	font-size: 1.2rem;
+	font-style: italic;
+	font-family: var(--secondary-font);
+
 }
 
 .header-wrapper h4 {
-  font-size: 0.8rem;
+	font-size: 0.8rem;
+	font-family: var(--secondary-font);
 }
 
 main {
-  padding: calc(2 * var(--white-space));
+	padding: calc(2 * var(--white-space));
 }
 
 section {
-  margin-bottom: calc(4 * var(--white-space));
+	margin-bottom: calc(4 * var(--white-space));
 }
 
 .section-heading {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
-  margin: 0.5rem 0;
+	font-family: montserrat, sans-serif;
+	font-style: italic;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #777;
+	margin: 0.5rem 0;
 }
 
 ul {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .swatches li {
-  margin-right: 5vw;
-  height: 15vw;
-  width: 20%;
+	margin-right: 5vw;
+	height: 15vw;
+	width: 20%;
 }
 
 ul li:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+	background-color: var(--bg-color);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+	background-color: var(--link-color);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+	background-color: var(--link-hover-color);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+	background-color: var(--color-4);
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+	background-color: var(--color-5);
+}
+
+.color-swatch-6 {
+	background-color: var(--color-6);
+}
+
+.color-swatch-7 {
+	background-color: var(--color-7);
 }
 
 .textures li {
-  height: 30vw;
-  width: 40%;
-  margin-right: 5vw;
+	height: 30vw;
+	width: 40%;
+	margin-right: 5vw;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+	background: url(../img/pw_maze_white.png) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+	background: url(../assets/15a74e2a1f8fedfc283ae701dcc43684.jpg) top left repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+	background: url(../assets/Seamless-White-Wood-Texture-5-copy.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+	background: url(../assets/10761343-closeup-texture-of-white-cat-fur.jpg) top left repeat;
 }
 
 .images ul {
-  flex-direction: column;
-  text-align: center;
+	flex-direction: column;
+	text-align: center;
 }
 
 .images li {
-  display: block;
-  /*margin-right: 5vw;*/
-  margin-bottom: 1rem;
-}
-
-button {
-  padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
-  text-align: center;
-  text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
-  color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  margin: 0 1rem 1rem 0;
-    border: 0px;
-    color: var(--link-hover-color);
-}
-
-.secondary-button {
-  background: var(--color-5);
-    color: white;
-}
-
-button:focus,
-button:active,
-button:focus-within {
-  outline: 0;
-  border-radius: 4px;
+	display: block;
+	margin-bottom: 1rem;
 }
 
 .typography-main {
-  color: var(--main-text-color);
+	color: var(--main-text-color);
 }
 
 .h1-sample {
-  font-size: 2.4rem;
-  font-weight: bold;
+	font-size: 2.4rem;
+	font-weight: bold;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+	font-family: var(--secondary-font);
+	font-style: italic;
+	font-weight: 600;
+	font-size: 1.25rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
-  line-height: 1.5;
-  max-width: 960px;
+	font-family: var(--secondary-font);
+	font-weight: 300;
+	line-height: 1.2;
+	max-width: 960px;
 }
 
 strong {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 em {
-  font-style: italic;
+	font-style: italic;
 }
 
 a {
-  font-family: var(--primary-font);
-  color: var(--link-color);
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.2s;
+	font-family: var(--secondary-font);
+	color: var(--link-color);
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.2s;
 }
 
 p[class*="font-details-"] {
-  margin-top: 0.5rem;
-  margin-bottom: calc(2 * var(--white-space));
-  font-size: 0.75rem;
-  font-family: var(--secondary-font);
-  color: #6f6f6f;
+	margin-top: 0.5rem;
+	margin-bottom: calc(2 * var(--white-space));
+	font-size: 0.75rem;
+	font-family: var(--secondary-font);
+	color: #6f6f6f;
 }
 
 .adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+	font-size: 2rem;
+	opacity: 0.6;
 }
 
 .adjectives ul {
-  flex-direction: column;
+	flex-direction: column;
+	font-family: montserrat, sans-serif;
+	font-size: 1.3rem;
+	font-weight: 300;
+	color: black;
 }
 
 footer {
-  font-style: italic;
+	font-style: italic;
+	font-family: montserrat, sans-serif;
 }
 
 @media (min-width: 800px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
-  }
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 4rem;
+	}
 
-  .swatches li {
-    margin-right: 3%;
-    height: 10vw;
-    width: 20%;
-  }
+	.swatches li {
+		margin-right: 3%;
+		height: 10vw;
+		width: 20%;
+	}
 
-  .textures li {
-    height: 15vw;
-  }
+	.textures li {
+		height: 15vw;
+	}
 }
 
 @media (min-width: 900px) {
-  .adjectives ul {
-    flex-direction: row;
-  }
+	.adjectives ul {
+		flex-direction: row;
+	}
 }
